@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+.slide-nav-item{
+    list-style: none;
+    padding: 9px 0;
+    &__link{
+        text-decoration: none;
+        color: $white_mode;
+        display: flex;
+        font-size: 16px;
+        i{
+            color: #FFD15C;
+            margin-right: 20px;  
+            width: 18px;
+            height: 18px;
+        }
+        
+    }
+}

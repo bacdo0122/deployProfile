@@ -1,0 +1,120 @@
+@import '../../variables.scss';
+
+.Home{
+   
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: $white_mode;
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        .intro{
+            text-align: center;
+            span{
+                font-size: 16px;
+                .text-changing{
+                    display: inline-block;
+                    -webkit-animation: bounc-In 2s  2s infinite both; 
+                    animation: bounc-In 2s  2s infinite both;
+                   
+                }
+            }
+            .social-list-icons{
+                list-style: none; 
+                .social-icon{
+                    display: inline-block;
+                    &:not(:last-child){
+                         margin-right: 1.5rem;
+                    }
+                    .social-icon-link{
+                        cursor: pointer;
+                        font-size: 21px;
+                        color: $white_mode;
+                     }
+                 }
+             }
+        }
+        .scroll__down{
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+
+           
+            a{
+                text-decoration: none;
+                color:$white_mode;
+                display: block;
+                text-align: center;
+                
+                .mouse{
+                    display: block;
+                    margin: auto;
+                    position: relative;
+                    width: 20px;
+                    height: 26px;
+                    
+                    border: 1px solid $white_mode;
+                    border-radius: 16px;
+                    .wheel{
+                        position: absolute;
+                        top: 18px;
+                        left: 40%;
+                        display: block;
+                        width: 4px;
+                        height: 4px;
+                        background-color: $white_mode;
+                        border-radius: 16px;
+                        animation: ani-mouse 2s ease 0s infinite;
+                        
+                    }
+                }
+            }
+        }
+
+}
+}
+
+@keyframes ani-mouse{
+    0% {top: 8px;}
+    50% {top: 14px;}
+    100%{
+        top: 8px;
+      }
+}
+@keyframes bounc-In{
+    0% { 
+        opacity: 0; 
+        transform: scale(.3);
+     }
+     20% { 
+        opacity: 1;
+        transform: scale(1.05);
+     }
+     40% {
+        transform: scale(.9);
+     }
+     100% {
+        transform: scale(1);
+     }
+}
+@-webkit-keyframes bounc-In {
+    0% {
+       opacity: 0;
+       -webkit-transform: scale(.3);
+    }
+    20% {
+       opacity: 1;
+       -webkit-transform: scale(1.15);
+    }
+    50% {
+       -webkit-transform: scale(.9);
+    }
+    100% {
+       -webkit-transform: scale(1);
+    }
+ }

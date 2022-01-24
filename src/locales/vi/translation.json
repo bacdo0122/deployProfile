@@ -1,0 +1,16 @@
+{
+  "data":[
+    { "icon": "fas fa-home", "text": "Trang chủ" },
+    { "icon": "fas fa-user", "text": "Thông tin" },
+    { "icon": "fas fa-home", "text": "Phục vụ" },
+    { "icon": "fas fa-home", "text": "Kinh Nhiệm" },
+    { "icon": "fas fa-home", "text": "Công Việc" },
+    { "icon": "fas fa-home", "text": "Blog" },
+    { "icon": "fas fa-home", "text": "Kết Nối" }
+  ],
+  "template":"© 2020 Mẫu của Bac",
+  "recommend":"Tôi là một ",
+  "jobs":["Kỹ sư công nghệ", "Người phát triển Front-End", "Thiết kế UI/UX"],
+  "hide":"Thuê tôi",
+  "scroll": "Trượt xuống"
+  }

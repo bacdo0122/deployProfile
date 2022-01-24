@@ -1,0 +1,17 @@
+{
+    "data":[
+      { "icon": "fas fa-home", "text": "Home" },
+      { "icon": "fas fa-user", "text": "About" },
+      { "icon": "fas fa-home", "text": "Services" },
+      { "icon": "fas fa-home", "text": "Experience" },
+      { "icon": "fas fa-home", "text": "Works" },
+      { "icon": "fas fa-home", "text": "Blog" },
+      { "icon": "fas fa-home", "text": "Contact" }
+    ],
+    "template":"© 2020 Bac Template",
+    "recommend":"I'm a ",
+    "jobs":["IT", "Front-End developer", "UI/UX designer"],
+    "hide":"Hide me",
+    "scroll": "Scroll down"
+    
+  }
