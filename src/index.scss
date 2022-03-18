@@ -4,13 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+#root{
+    position: relative;
+}
 .App{
    width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
-
+html{
+    scroll-behavior: smooth
+}
 .mb-2{
     margin-bottom: $m-2;
+}
+.mb-3{
+    margin-bottom: $m-3;
 }
 .mb-4{
     margin-bottom: $m-4;
@@ -19,7 +27,13 @@
     margin-top: $m-4;
 }
 .mt-3{
-    margin-right: $m-3;
+    margin-top: $m-3;
+}
+.mt-2{
+    margin-top: $m-2;
+}
+.mt-1{
+    margin-top: $m-1;
 }
 .mt-1{
     margin-top: $m-1 !important;
@@ -27,17 +41,57 @@
 .mr-2{
     margin-right: $m-2;
 }
+.ml-2{
+    margin-left: $m-2;
+}
+
 .btn{
-    padding: 12px 32px;
+    padding: 12px 30px;
     border-radius: 30px;
     overflow: hidden;
     font-size: 16px;
     font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
+.btn-default:hover{
+               
+    animation: btn-push .2s ease both;
+   }
 .btn-default{
     color: #FFF;
     background: #FF4C60;    
     text-decoration: none;
     display: inline-block;
+}
+.light{
+    background-color: #F9F9FF;
+    color: #000
+}
+.text-center{
+    text-align: center;
+}
+.dark{
+    background-color: #353353;
+    color: #fff
+}
+@media only screen and (min-width: 768px)  {
+    .dark 
+    {
+        .intro::before{ 
+            border-right-color: rgb(48, 47, 78) !important;
+         }
+    }
+    
+}
+@media only screen and (max-width: 768px)  {
+    .dark 
+    {
+        .intro::before{ 
+            border-bottom-color: rgb(48, 47, 78) !important;
+         }
+    }
+    
 }
 

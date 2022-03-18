@@ -9,7 +9,9 @@ function App({ t }: any) {
     setNav(!nav);
   };
   return (
-    <div className="App">
+    <div className={switchs ? "App light": "App dark"} 
+    
+    >
       <SlideNavigation nav={nav} t={t} switchs={switchs} setSwitchs={setSwitchs}/>
       <Profile onClick={onClick} nav={nav}  switchs={switchs} t={t}/>
     </div>

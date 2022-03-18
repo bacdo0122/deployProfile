@@ -1,0 +1,128 @@
+.About{
+    .slick-slider{
+        max-width: 700px;
+        margin: 0 auto;
+        .slick-list{
+            .slick-track{
+                .slick-slide{
+                    text-align: center;
+                    .thumb{
+                        width: 90px;
+                        height: 90px;
+                        margin: 0 auto;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                    h4{
+                        margin: 1rem 0;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    span{
+                        color: #8B88B1;
+                        font-size: 14px;
+                        
+                    }
+                    .bg_dark{
+                        margin-top: 1.5rem;
+                        background-color: #302f4e;
+                        padding: 30px;
+                        border-radius: 20px;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            top: -10px;
+                            left: 50%;
+                            transform: translateX(-7.5px);
+                            border-bottom: 12px solid #302f4e;
+                            border-right: 12px solid transparent;
+                            border-left: 12px solid transparent;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            position: relative;
+            bottom: 0;
+            margin-top: 1rem;
+            li{
+                list-style: none;
+                width: 10px;
+                height: 6px;
+                margin: 0 8px;
+                button{
+                    width: 10px;
+                    height: 6px;
+                    padding: 0;
+                    &::before{
+                        content: "";
+                        background: #D4D4FF;
+                        border-radius: 3px;
+                        opacity: 1;
+                        height: 6px;
+                        width: 10px;
+                    }
+                }
+            }
+            .slick-active{
+                width: 20px;
+                height: 6px;
+                margin: 0;
+                button{
+                    width: 10px;
+                    height: 6px;
+                    padding: 0;
+                    &::before{
+                        content: "";
+                        background: #FF4C60;
+                        border-radius: 3px;
+                        opacity: 1;
+                        height: 6px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        .client-item{
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding-right: 15px;
+            padding-left: 15px;
+            .inner{
+                min-height: 50px;
+                position: relative;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-top: 60px;
+                align-items: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:767px) {
+    .About{
+        .row{
+            .client-item{
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}

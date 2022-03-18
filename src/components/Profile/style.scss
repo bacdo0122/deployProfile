@@ -2,7 +2,7 @@
 .header__wrapper{
     flex:1;
     transition: all .5s ease-in;
-    background: $dark_mode; 
+    background: transparent; 
     @media only screen and (min-width: 1000px){
       margin-left: 290px;
         

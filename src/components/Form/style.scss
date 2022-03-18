@@ -1,0 +1,89 @@
+.About{
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        .form-title{
+            flex: 0 0 33.33%;
+            padding: 0 10px;
+            min-height: 200px;
+            background-image: url("https://jthemes.net/themes/html/bolby/demo/images/map-light.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            h3{
+                font-size: 24px;
+                color: #fff;
+                margin-bottom: 1rem;
+                font-weight: 800;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .form-wrapper{
+            flex: 0 0 66.66%;
+            padding: 0 10px;
+            .contact-form{
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                   
+                    .row-form{
+                        padding: 0 10px;
+                       
+                        .column{
+                            margin-bottom: 30px;
+                                input, textarea{
+                                    width: 100%;
+                                    padding: 10px 30px;
+                                    border-radius: 30px;
+                                    height: 60px;
+                                    color: #454360;
+                                    background-color: #FFF;
+                                    border: 0;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    outline: none;
+                                    line-height: 1.6;
+                                }
+                                textarea{
+                                    height: auto;
+                                    overflow: auto;
+                                    resize: vertical;
+                                }
+                        }
+                    }
+                    .col-6{
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .col-12{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+                button{
+                    margin-left: 10px;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .About{
+        .form{
+            .form-title{
+                flex: 0 0 100%;
+            }
+            .form-wrapper{
+                flex: 0 0 100%;
+            }
+        }
+        .col-6{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+   
+}

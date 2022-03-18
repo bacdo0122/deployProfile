@@ -55,9 +55,9 @@ export const Intro = (props: Props) => {
           </a>
         </div>
       </div>
-      <div className="scroll__down mt-3">
+      <div className="scroll__down mt-3" id="Home">
         <a
-          href="#about"
+          href="#About"
           style={switchs ? { color: "#000" } : { color: "#fff" }}
         >
           <span className="mb-2">{t("scroll")}</span>

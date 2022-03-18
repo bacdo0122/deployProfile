@@ -1,7 +1,7 @@
-import i18next from "../../i18n";
-import { Select } from "../Select";
+import { useEffect, useState } from "react";
+import {handleScroll} from '../common'
 import { SlideNavItem } from "../SlideNavItem";
-import { SwitchColor } from "../SwitchColor";
+
 import "./style.scss";
 
 interface Props {
@@ -10,27 +10,26 @@ interface Props {
   switchs: boolean;
   setSwitchs: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const data = [
-  { text: "vn", value: "vn" },
-  { text: "en", value: "en" },
-];
+
 
 const SlideNavigation = (props: Props) => {
   const { nav, t, setSwitchs, switchs } = props;
-
+  const [active, setActive] = useState("Home");
+  useEffect(()=>{
+    window.addEventListener("scroll", ()=>handleScroll(setActive));
+  },[])
   return (
     <div
       className={nav ? `slide-nav active` : `slide-nav`}
       style={
         switchs
-          ? { backgroundColor: "#fff", color: "#000" }
-          : { backgroundColor: "#353353", color: "#fff" }
+          ? {  color: "#000" }
+          : {  color: "#F9F9FF" }
       }
     >
       <div className="slide-logo header__title">Bac</div>
-      <Select data={data} />
 
-      <SwitchColor setSwitchs={setSwitchs} switchs={switchs} />
+
       <ul className="slide-block">
         {t("data", { returnObjects: true }).map(
           (item: { text: string; icon: string }, index: number) => {
@@ -40,6 +39,8 @@ const SlideNavigation = (props: Props) => {
                 text={item.text}
                 key={index}
                 switchs={switchs}
+                active={active}
+                setActive={setActive}
               />
             );
           }

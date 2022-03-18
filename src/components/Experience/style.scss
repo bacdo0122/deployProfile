@@ -1,0 +1,18 @@
+.About {
+    width: 95%;
+    margin: 4rem auto;
+    max-width: 1080px;
+    
+    .list-experiences{
+        display: flex;
+        width: 97%;
+        max-width: 97%;
+        margin: 0 auto;
+        @media only screen and (max-width: 768px){
+            flex-direction: column  ;
+            width: 100%;
+            max-width: 100%;
+            gap: 20px;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 .slide-nav{
-    background: $dark_mode;
+    background: transparent;
     color: $white_mode;
     transition: transform .5s ease-in;  
     transform: translateX(-290px);

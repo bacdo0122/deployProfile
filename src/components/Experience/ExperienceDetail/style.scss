@@ -1,0 +1,55 @@
+.Experience-detail{
+    padding: 0 10px;
+    overflow: hidden;
+    .container{
+        padding: 30px;
+        background-color: #302F4E;
+        border-radius: 20px;
+        
+        .list-item{
+            position: relative;
+            
+            .experience-item{
+                list-style: none;
+                
+                padding-left: 30px;
+                position: relative;
+                span{
+                    color: #8B88B1;
+                }
+                i{
+                    position: absolute;
+                    font-size: 18px;
+                    color: #FF4C60;
+                    top: 0;
+                    left: -8px;
+                    z-index: 10;
+                }
+                h1{
+                    font-size: 24px;
+                    margin: 10px 0;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 1.7;
+                }
+               &:not(:last-child){
+                    padding-bottom: 50px;
+               }
+               .line{ 
+                position: absolute;
+                width: 1px;
+                top: 25px;
+                bottom: 2px;
+                left: 0px;
+                background-color: #FF4C60;
+                z-index: 1;
+            }
+            }
+           
+        }
+      
+    }
+    
+}

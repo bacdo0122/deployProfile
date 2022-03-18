@@ -1,0 +1,148 @@
+.plan_list {
+    display: flex;
+    .plan_item{
+        list-style: none;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        margin-top: 1.5rem;
+        &:nth-child(1){
+            padding-left: 15px;
+        }
+        &:nth-child(3){
+            padding-right: 15px;
+        }
+        .plan_item_wrapper{
+            background: #302f4e !important;
+            padding: 30px 40px;
+            border-radius: 20px !important;
+            position: relative;
+            box-shadow: 0px 5px 20px 0px #ffffff03;
+            .plan_item_container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                line-height: 26px;
+                h2{
+                    margin: 1rem 0;
+                }
+                p{
+                    margin-bottom: 1rem;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+                h3{
+                    font-size: 36px;
+                    font-weight: 700;
+                    margin: 0;
+                    em{
+                        vertical-align: super;
+                        font-size: 14px;
+                        margin-right: 5px;
+                        font-style: normal;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-left: 10px;
+                    }
+                }
+                button{
+                    margin-bottom: 0!important;
+                }
+            }
+            .plan_item_icon{
+                position: absolute;
+                top: 47px;
+                left: 0;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                color: #FFF;
+                padding: 5px 12px;
+                background: #6C6CE5;
+                transform: rotate(-90deg);
+            }
+        }
+        .plan_item_wrapper_recommend{
+            padding: 55px 40px !important;
+            margin-top: 0!important;
+        }
+    }
+    .plan_item_recommend{
+        margin-top: 0;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    .plan_list{
+        flex-direction: column;
+        .plan_item{
+            list-style: none;
+            max-width: 100%;
+            margin-top: 1.5rem;
+            .plan_item_wrapper{
+                background: #302f4e !important;
+                padding: 30px 40px;
+                border-radius: 20px !important;
+                position: relative;
+                box-shadow: 0px 5px 20px 0px #ffffff03;
+                .plan_item_container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    line-height: 26px;
+                    h2{
+                        margin: 1rem 0;
+                    }
+                    p{
+                        margin-bottom: 1rem;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    h3{
+                        font-size: 36px;
+                        font-weight: 700;
+                        margin: 0;
+                        em{
+                            vertical-align: super;
+                            font-size: 14px;
+                            margin-right: 5px;
+                            font-style: normal;
+                        }
+                        span{
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-left: 10px;
+                        }
+                    }
+                    button{
+                        margin-bottom: 0!important;
+                    }
+                }
+                .plan_item_icon{
+                    position: absolute;
+                    top: 47px;
+                    left: 0;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    color: #FFF;
+                    padding: 5px 12px;
+                    background: #6C6CE5;
+                    transform: rotate(-90deg);
+                }
+            }
+            .plan_item_wrapper_recommend{
+                padding: 55px 40px !important;
+                margin-top: 0!important;
+            }
+        }
+        .plan_item_recommend{
+            margin-top: 0;
+        }
+    }
+ 
+    
+    
+
+}

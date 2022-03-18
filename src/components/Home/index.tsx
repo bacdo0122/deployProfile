@@ -11,7 +11,7 @@ interface Props {
 export const Home = (props: Props) => {
   const { t, switchs } = props;
   return (
-    <div className="Home">
+    <div className="Home" id="Home">
       <Intro t={t} switchs={switchs} />
       <Parallax />
     </div>
